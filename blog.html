@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PH Tube</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="w-[90%] mx-auto" style="font-family: 'Inter', sans-serif;">
+    <header>
+        <div class="flex justify-between py-5">
+            <div>
+                <a href="index.html"><img src="./images/Logo.png"></a>
+            </div>
+            <div>
+                <button class="bg-gray-200 rounded py-2 px-3 hidden md:flex text-lg">Sort by view</button>
+            </div>
+            <div>
+                <button class="bg-[#FF1F3D] rounded py-2 px-3 text-lg">Blog</button>
+            </div>
+        </div>
+        <hr class="mb-10">
+    </header>
+    <main>
+        <!-- Discuss the scope of var, let, and const  -->
+        <div class="bg-gray-200 p-4 mb-10">
+            <div>
+                <h2 class="text-2xl lg:text-3xl font-bold text-center mb-3 bg-white lg:w-[50%] p-3 rounded-xl mx-auto">
+                    The scope of var, let, and const</h2>
+                <p>The keywords var, let, and const allow us to declare variables. A variable can be declared in
+                    javascript using the venerable
+                    Var variable method. We utilize the let and const variables in the current javascript, which was
+                    included in the ES2015(ES6)
+                    update; it is now used more commonly in modern javascript than the var variable.
+                <p class="italic">scope:Scope basically refers to the area in which these variables can be used. Var
+                    declarations can be function/locally or globally scoped.</p>
+                </p>
+            </div>
+            <div class="mt-5">
+                <h2 class="bg-white p-2 rounded md:w-[20%] text-blue-700">scope of var</h2>
+                <p>When a var variable is declared outside of a function, the scope is global. This means that any
+                    variable declared outside of a function block using the var keyword is accessible throughout the
+                    entire window.
+                    When a variable is declared inside a function, it has function scope. This indicates that it is
+                    accessible and limited to that function.</p>
+                <p>Hoisting of var:
+
+                    Before code is executed, variables and function declarations are hoisted to the top of their scope
+                    in JavaScript.
+                    As a result, var variables are initialized with the value undefined and raised to the top of their
+                    scope.</p>
+            </div>
+            <div class="mt-5">
+                <h2 class="bg-white p-2 rounded md:w-[20%] text-blue-700">scope of let </h2>
+                <p>Let is now the preferred syntax for declaring variables.A variable declared in a block with let can
+                    only be used in that block.
+                    A block is a section of code that is bounded by. Curly braces house a block. A block is anything
+                    contained in curly brackets.
+                    Let is a superior option to var due to this feature. If you've used a name for a variable before,
+                    you don't need to worry while using let because a variable only exists within its scope.
+                </p>
+            </div>
+            <div class="mt-5">
+                <h2 class="bg-white p-2 rounded md:w-[20%] text-blue-700">scope of const</h2>
+                <p>Constant values are kept for variables specified using the const keyword.
+                    The scope of const declarations is blocked.
+                    Const declarations, like let declarations are only accessible within the block in which they were
+                    made.
+                    It is impossible to modify or re-declare const.
+                    This indicates that within the scope of a variable declared with const, its value will not change.
+                    It cannot be changed or declared again.
+                </p>
+            </div>
+
+        </div>
+        <!-- the use cases of null and undefined  -->
+        <div class="bg-gray-200 p-4 mb-10">
+            <div>
+                <h2 class="text-2xl lg:text-3xl font-bold text-center mb-3 bg-white lg:w-[50%] p-3 rounded-xl mx-auto">
+                    The use cases of null and undefined</h2>
+                <div>
+                    <h2 class="bg-white p-2 rounded md:w-[20%] text-blue-700">undefined</h2>
+                    <p>undefined means a variable has been declared but has not yet been assigned a value.
+                        undefined is a type by itself (undefined).
+                        Unassigned variables are initialized by JavaScript with a default value of undefined.
+                    <p>A variable that has not been assigned a value is of type undefined. A method or statement also
+                        returns
+                        undefined if the variable that is being evaluated does not have an assigned value. A function
+                        returns undefined if a value was not returned.</p>
+                    <p>While you can use undefined as an identifier (variable name) in any scope other than the global
+                        scope (because undefined is not a reserved word), doing so is a very bad idea that will make
+                        your code difficult to maintain and debug.</p>
+                    <p>You can use undefined and the strict equality and inequality operators to determine whether a
+                        variable has a value. </p>
+                </div>
+                <div class="mt-5">
+                    <h2 class="bg-white p-2 rounded md:w-[20%] text-blue-700">null</h2>
+                    <p>On the other hand, null is an object. It can be assigned to a variable as a representation of no
+                        value. JavaScript never
+                        sets a value to null. That must be done programmatically.</p>
+                    <p>A null value in JavaScript is used for referring absence of any object value and if any function
+                        or variable returns null,
+                        then we can infer that the object could not be created.</p>
+                </div>
+                <p class="italic">When used in conditional logic both undefined and null will return false.</p>
+
+                </p>
+            </div>
+
+
+
+
+            <div class="mt-5">
+                
+                <h2 class="text-blue-500 text-2xl text-center mt-10">null</h2>
+                <div>
+                    <p>1.Intentional Absence of Value: Developers can assign null to a variable or property to indicate
+                        that
+                        there is no value or that the value is intentionally missing or unknown.</p>
+                    <p class="bg-black p-2 text-teal-500 rounded-xl md:w-[50%] mx-auto">let myVariable = null;</p>
+                    <p>In this case, myVariable is explicitly set to null to signify that it doesn't have a meaningful
+                        value.</p>
+                </div>
+                <div>
+                    <p>2.Function Return Values: Functions may return null to indicate that they did not produce a valid
+                        result or that an error occurred.</p>
+                    <p class="bg-black p-2 text-teal-500 rounded-xl md:w-[50%] mx-auto">function findElement(arr, target) { <br>
+                        // ... logic to find target <br>
+                        if (elementFound) { <br>
+                        return foundElement; <br>
+                        } else { <br>
+                        return null; <br>
+                        } <br>
+                        }</p>
+                    <p>Here, null is returned when the target element is not found.</p>
+                </div>
+                <div>
+                    <p>3.As a Placeholder: Sometimes, developers use null as a placeholder for an object or a value that
+                        will be assigned later.</p>
+                    <p class="bg-black p-2 text-teal-500 rounded-xl md:w-[50%] mx-auto">let data = null; <br>
+                         // Placeholder for data to be fetched from an <br>
+                        API <br>
+                        // Later in the code... <br>
+                        data = fetchDataFromAPI();</p>
+
+                </div>
+                <div>
+                    <p>4.Checking for Null: You can explicitly check for null in conditional statements or when handling
+                        optional values.</p>
+                    <p class="bg-black p-2 text-teal-500 rounded-xl md:w-[50%] mx-auto">if (myVariable === null) { <br>
+                        // Handle the case when myVariable is explicitly set to null <br>
+                        }
+                    </p>
+
+                </div>
+
+
+
+
+                <div>
+                    <h2 class="text-blue-500 text-2xl text-center mt-10">undefined</h2>
+                    <p>1.Default Function Parameters: When a function is called with fewer arguments than declared
+                        parameters, the missing parameters are automatically set to undefined.</p>
+                    <p class="bg-black p-2 text-teal-500 rounded-xl md:w-[50%] mx-auto">function greet(name, age) { <br>
+                        console.log(name); // If name is not provided, it's undefined <br>
+                        console.log(age); // If age is not provided, it's also undefined <br>
+                        }
+                    </p>
+
+                </div>
+                <div>
+
+                    <p>2.Variable Declaration: Variables declared but not initialized are by default set to undefined.
+                    </p>
+                    <p class="bg-black p-2 text-teal-500 rounded-xl md:w-[50%] mx-auto">let myVariable; <br>
+                        console.log(myVariable); // Outputs undefined <br>
+
+                    </p>
+
+                </div>
+                <div>
+
+                    <p>3.Object Properties: When you try to access an object property that doesn't exist, it returns
+                        undefined.
+                    </p>
+                    <p class="bg-black p-2 text-teal-500 rounded-xl  md:w-[50%] mx-auto">const person = { name: 'John' }; <br>
+                        console.log(person.age); // Outputs undefined <br>
+
+                    </p>
+
+                </div>
+                <div>
+
+                    <p>4.Function Return Values: If a function doesn't explicitly return a value, it returns undefined
+                        by default.
+                    </p>
+                    <p class="bg-black p-2 text-teal-500 rounded-xl  md:w-[50%] mx-auto">function noReturnValue() {  <br>
+                        // No return statement, so it returns undefined <br>
+                        }
+                    </p>
+
+                </div>
+                <div>
+
+                    <p>5.Checking for Undefined: You can check if a variable or property is undefined to handle cases
+                        where a value might not exist or hasn't been assigned yet.
+                    </p>
+                    <p class="bg-black p-2 text-teal-500 rounded-xl md:w-[50%] mx-auto">if (typeof someVariable === 'undefined') { <br>
+                        // Handle the case when someVariable is undefined <br>
+                      }
+                      
+
+                    </p>
+
+                </div>
+
+
+
+
+
+            </div>
+
+
+
+        </div>
+        <!-- REST API  -->
+        <div class="bg-gray-200 p-4 mb-10">
+            <div>
+                <h2 class="text-2xl lg:text-3xl font-bold mb-3 bg-white lg:w-[50%] p-3 rounded-xl mx-auto text-center">
+                    REST API</h2>
+                <p>An API for a website is code that allows two software programs to communicate with each other.</p>
+                <p>A RESTful API -- also referred to as a RESTful web service or REST API -- is based on
+                    representational
+                    state transfer (REST), which is an architectural style and approach to communications often used in
+                    web services development.</p>
+
+                <p>A RESTful API is an architectural style for an application program interface (API) that uses HTTP
+                    requests to access and use data. That data can be used
+                    to GET, PUT, POST and DELETE data types, which refers to the reading, updating, creating and
+                    deleting of operations concerning resources.</p>
+                <p>REST technology is generally preferred over other similar technologies. This tends to be the case
+                    because REST uses less bandwidth, making it more suitable for efficient internet usage. RESTful APIs
+                    can also be built with programming languages such as JavaScript or Python.</p>
+                <p class="mt-4 font-bold">How RESTful APIs work</p>
+                <p>A RESTful API uses commands to obtain resources. The state of a resource at any given timestamp is
+                    called a resource representation. A RESTful API uses existing HTTP methodologies defined by the RFC
+                    2616 protocol, such as:</p>
+                <ul>
+                    <li>GET to retrieve a resource;</li>
+                    <li>PUT to change the state of or update a resource, which can be an object, file or block;</li>
+                    <li>POST to create that resource; and</li>
+                    <li>DELETE to remove it.</li>
+
+                </ul>
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
