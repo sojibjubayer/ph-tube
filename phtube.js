@@ -1,5 +1,5 @@
 
-
+// feth category
 const handleCategory = async () => {
   const response = await fetch(
     "https://openapi.programming-hero.com/api/videos/categories"
@@ -8,7 +8,6 @@ const handleCategory = async () => {
 
   const tabContainer = document.getElementById("tab-container");
 
-  //fetch category
   const categories = data.data
 
   categories.forEach((category) => {
@@ -35,7 +34,6 @@ const handleLoadVideos = async (categoryId) => {
   const data = await response.json();
   const cardData = data.data
   loadData(cardData)
-
 
 
   cardData.sort((a, b) => {
